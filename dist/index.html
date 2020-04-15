@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
-<body>
+<body style="background: url('https://unsplash.com/photos/HQR_JXd-fPs');">
     <section>
         <div class="m-5 text-center">
             <h1>Weather4u</h1>
         </div>
         <div class="m-5 text-center ">
-            <input type="search" placeholder="Enter your Location">
+            <!-- <form action="" class=""> -->
+                <input class="p-2" id="location" type="search" placeholder="Enter your Location">
+                <input type="image" class="search-icon" src="https://img.icons8.com/cotton/64/000000/search--v1.png" alt="submit">
+            <!-- </form> -->
         </div>
     </section>
     <main>
@@ -19,9 +22,17 @@
             <div class="row">
                 <div class = " col-md-8 jumbotron">
                     <div class="row">
-                        <div id="ctry"></div>
-                        <div id="toggle"></div>
-                        <div id="date"></div>
+                        <div class="col-md-4" id="ctry"></div>
+                        <div class="col-md-4" id="toggle">one</div>
+                        <div class="col-md-4" id="date"></div>
+                    </div>
+                    <div>
+                        <div class="temp">101</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 humidity">11</div>
+                        <div class="col-md-4 feels">11</div>
+                        <div class="col-md-4 wind">11</div>
                     </div>
                 </div>
                 <div></div>
