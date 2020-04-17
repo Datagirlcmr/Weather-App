@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 </head>
-<body style="background: url('https://unsplash.com/photos/HQR_JXd-fPs');">
+<body>
     <section>
         <div class="m-5 text-center">
             <h1>Weather4u</h1>
+            <!-- <img src="../src/images/sunny.jpeg" alt=""> -->
         </div>
         <div class="m-5 text-center ">
             <!-- <form action="" class=""> -->
-                <input class="p-2" id="location" type="search" placeholder="Enter your Location">
+                <input class="p-2 search" id="location" type="text" placeholder="Enter your Location">
                 <input type="image" class="search-icon" src="https://img.icons8.com/cotton/64/000000/search--v1.png" alt="submit">
             <!-- </form> -->
         </div>
@@ -20,19 +21,34 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class = " col-md-8 jumbotron">
-                    <div class="row">
-                        <div class="col-md-4" id="ctry"></div>
+                <div class = " col-md-11 jumbotron">
+                    <div class="row p-3">
+                        <div class="col-md-4" id="ctry">London, Uk</div>
                         <div class="col-md-4" id="toggle">one</div>
                         <div class="col-md-4" id="date"></div>
                     </div>
-                    <div>
-                        <div class="temp">101</div>
+                    <div class="row border border-danger rounded p-3">
+                        <div class="col-md-8 text-center">
+                            <h3>Temp</h3>
+                            <h3 class="temp">286.56 °C </h3>
+                        </div>
+                        <div class="col-md-3">
+                            <h3>Feels like</h3>
+                            <h3 class="feels-like">278.99 °C</h3>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 humidity">11</div>
-                        <div class="col-md-4 feels">11</div>
-                        <div class="col-md-4 wind">11</div>
+                    <div class="row p-2">
+                        <div class="col-md-4 humidity">
+                            <h3>Humidity</h3>
+                            <p id="humid-w">54 %</p>
+                        </div>
+                        <div class="col-md-4 main-desc">
+                            <h4 id="main-desc">mostly clouds</h4>
+                        </div>
+                        <div class="col-md-4 wind">
+                            <h3>Wind Speed</h3>
+                            <p id = "wind-deg">9.3 mph</p>
+                        </div>
                     </div>
                 </div>
                 <div></div>
