@@ -7,13 +7,18 @@ const getDate = () => {
 const getLocation = () => {
     const searchIcon = document.querySelector('.search-icon');
     const getInput = document.querySelector('#location');
+
+    
+    getInput.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            searchIcon.click();
+        }
+    });
+    
     searchIcon.addEventListener('click', () => {
         const inputValue = getInput.value;
             getWeather(inputValue);
-            // if (name = '') {
-            //     const errorMessage = document.querySelector('.error');
-            //     errorMessage.textContent = "The Input entered is incorrect";
-            // }
     });
 }
 
