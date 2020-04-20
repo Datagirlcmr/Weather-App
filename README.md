@@ -1,5 +1,5 @@
 # Weather App
-This project involves implementing aynchronous javascript via aync/await and Promises to build a weather forecase app from the openweather site API.
+This project involves implementing aynchronous javascript via async/await and Promises to build a weather forecast app from the openweather site API.
 
 ## Live Demo Link
 
