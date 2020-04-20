@@ -126,7 +126,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/moon.jpeg */ \"./src/images/moon.jpeg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \"body {\\n    background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n    background-repeat: no-repeat;\\n    background-size: cover;\\n    background-position: center;\\n    font-family: Georgia, 'Times New Roman', Times, serif;\\n}\\n\\n.app-name {\\n    font-size: 100px;\\n    font-weight: bolder;\\n    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;\\n    color: lightseagreen;\\n}\\n\\n.search{\\n    border-radius: 4px;\\n}\\n.search-icon {\\n    border-radius: 4px;\\n    border: 0px;\\n    background-color: rgb(83, 82, 82);\\n    margin-left: -5px;\\n}\\n\\n.jumbotron{\\n    background-color: white !important;\\n}\\n\\n\\n.temp{\\n    font-size: 80px;\\n    font-weight: bolder;\\n    color: mediumblue;\\n    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/sky.jpeg */ \"./src/images/sky.jpeg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \"body {\\n    background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n    background-repeat: no-repeat;\\n    background-size: cover; \\n    background-position: center;\\n}\\n\\n.app-name {\\n    font-size: 100px;\\n    font-weight: bolder;\\n    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;\\n    color: lightseagreen;\\n}\\n\\n.search{\\n    border-radius: 4px;\\n}\\n.search-icon {\\n    border-radius: 4px;\\n    border: 0px;\\n    background-color: rgb(83, 82, 82);\\n    margin-left: -5px;\\n}\\n\\n#ctry {\\n    font-family: 'Courier New', Courier, monospace;\\n    color:  rgb(205, 0, 0);\\n    font-weight: bolder;\\n}\\n\\n.jumbotron{\\n    background-color: rgba(0, 0, 0, 0.459) !important;\\n}\\n\\n\\n.temp{\\n    font-size: 70px;\\n    font-weight: bolder;\\n    color: rgb(205, 0, 0);\\n    font-family: 'Times New Roman', Times, serif;\\n}\\n\\n#main-desc{\\n    font-style: italic;\\n    font-weight: bolder;\\n}\\n\\n.tempp{\\n    font-weight: bolder;\\n    font-family: 'Courier New', Courier, monospace;\\n    color: white;\\n}\\n\\nfooter{\\n    font-weight: bolder;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/styles/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -212,15 +212,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./src/images/moon.jpeg":
-/*!******************************!*\
-  !*** ./src/images/moon.jpeg ***!
-  \******************************/
+/***/ "./src/images/sky.jpeg":
+/*!*****************************!*\
+  !*** ./src/images/sky.jpeg ***!
+  \*****************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"2f73522a8306cf60bae5df4bc8d77f28.jpeg\");\n\n//# sourceURL=webpack:///./src/images/moon.jpeg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"0edfd485fe793ca1cfdc646b4d92fbf6.jpeg\");\n\n//# sourceURL=webpack:///./src/images/sky.jpeg?");
 
 /***/ }),
 

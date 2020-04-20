@@ -23,48 +23,55 @@
         <div class="container">
             <div class="row">
                 <div class = "m-auto jumbotron">
-                    <div class="row">
-                        <div class="col-md-5"> 
+                    <div class="row border-bottom">
+                        <div class="col-md-6"> 
                             <h1 id="ctry"></h1>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <button class="btn btn-success" id="toggleC">°C</button>
                             <button class="btn btn-primary" id="toggleF">°F</button>
                         </div>
                         <div class="col-md-3">
-                            <h6 id="date"></h6>
+                            <h6 class="tempp" id="date"></h6>
                         </div>
                     </div>
-                    <div class="row border border-danger rounded">
-                        <div class="col-md-2 main-desc">
-                            <h4 id="main-desc">mostly clouds</h4>
-                            <h3>Temp</h3>
+                    <div class="row border-bottom">
+                        <div class="col-md-3 main-desc">
+                            <h4 class="tempp" id="main-desc"></h4>
+                        </div>
+                        <div>
+                            <h3 class="col-md-1 tempp">Temp</h3>
                             <img src="../src/images/icons8-temperature-64.png" alt="temp"/>
                         </div>
-                        <div class="col-md-9 text-center">
+                        <div class="col-md-7 text-center">
                             <h3 class="temp"></h3>
+                            <h3 class=" tempp feels-like"> </h3>
                         </div>
                     </div>
-                    <div class="col-md-11 text-center mt-2">
-                        <h3 class="feels-like"> </h3>
-                    </div>
+                
                     <div class="row m-auto">
-                        <div class="col-md-5 humidity">
-                            <h3>Humidity</h3>
-                            <img src="../src/images/icons8-humidity-64.png" alt="humidity">
-                            <span><p id="humid-w"></p></span>
+                        <div class="col-md-5 text-center humidity font-weight-bolder">
+                            <h3 class="tempp">Humidity</h3>
+                            <div class="row d-flex justify-content-center">
+                                <img src="../src/images/icons8-humidity-64.png" alt="humidity">
+                                <h2 class="text-danger" id="humid-w"></h2>
+                            </div>
                         </div>
-                        <div class="col-md-6 wind">
-                            <h3>Wind Speed</h3>
-                            <img src="../src/images/icons8-wind-speed-98-102-48.png" alt="wind">
-                            <p id = "wind-deg"></p>
+                        <div class="col-md-6 text-center wind">
+                            <h3 class="tempp">Wind Speed</h3>
+                            <div class="row d-flex justify-content-center">
+                                <img src="../src/images/icons8-wind-speed-98-102-48.png" alt="wind">
+                                 <h2 class="text-danger" id = "wind-deg"></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div></div>
             </div>
         </div>
     </main>
+    <footer>
+        <p class="text-center">Designed by DataGirl &copy;2020</p>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,9 +1,8 @@
 body {
-    background-image: url('../images/moon.jpeg');
+    background-image: url('../images/sky.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .app-name {
@@ -23,14 +22,35 @@ body {
     margin-left: -5px;
 }
 
+#ctry {
+    font-family: 'Courier New', Courier, monospace;
+    color:  rgb(205, 0, 0);
+    font-weight: bolder;
+}
+
 .jumbotron{
-    background-color: white !important;
+    background-color: rgba(0, 0, 0, 0.459) !important;
 }
 
 
 .temp{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bolder;
-    color: mediumblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(205, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main-desc{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.tempp{
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+footer{
+    font-weight: bolder;
 }
