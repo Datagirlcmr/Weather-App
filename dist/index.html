@@ -7,47 +7,57 @@
 </head>
 <body>
     <section>
-        <div class="m-5 text-center">
-            <h1>Weather4u</h1>
-            <!-- <img src="../src/images/sunny.jpeg" alt=""> -->
+        <div class="m-1 text-center">
+            <h1 class="app-name">Weather4u</h1>
         </div>
-        <div class="m-5 text-center ">
-            <!-- <form action="" class=""> -->
-                <input class="p-2 search" id="location" type="text" placeholder="Enter your Location">
-                <input type="image" class="search-icon" src="https://img.icons8.com/cotton/64/000000/search--v1.png" alt="submit">
-            <!-- </form> -->
+        
+        <div class="m-1 text-center">
+            <input class="p-3 search" id="location" type="text" placeholder="Enter your Location">
+            <span>
+                <img class="search-icon" src="https://img.icons8.com/cotton/64/000000/search--v1.png" alt="submit">
+            </span>
         </div>
+        <h1 class="error text-danger"></h1>
     </section>
     <main>
         <div class="container">
             <div class="row">
-                <div class = " col-md-11 jumbotron">
-                    <div class="row p-3">
-                        <div class="col-md-4" id="ctry">London, Uk</div>
-                        <div class="col-md-4" id="toggle">one</div>
-                        <div class="col-md-4" id="date"></div>
-                    </div>
-                    <div class="row border border-danger rounded p-3">
-                        <div class="col-md-8 text-center">
-                            <h3>Temp</h3>
-                            <h3 class="temp">286.56 °C </h3>
+                <div class = "m-auto jumbotron">
+                    <div class="row">
+                        <div class="col-md-5"> 
+                            <h1 id="ctry"></h1>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-success" id="toggleC">°C</button>
+                            <button class="btn btn-primary" id="toggleF">°F</button>
                         </div>
                         <div class="col-md-3">
-                            <h3>Feels like</h3>
-                            <h3 class="feels-like">278.99 °C</h3>
+                            <h6 id="date"></h6>
                         </div>
                     </div>
-                    <div class="row p-2">
-                        <div class="col-md-4 humidity">
-                            <h3>Humidity</h3>
-                            <p id="humid-w">54 %</p>
-                        </div>
-                        <div class="col-md-4 main-desc">
+                    <div class="row border border-danger rounded">
+                        <div class="col-md-2 main-desc">
                             <h4 id="main-desc">mostly clouds</h4>
+                            <h3>Temp</h3>
+                            <img src="../src/images/icons8-temperature-64.png" alt="temp"/>
                         </div>
-                        <div class="col-md-4 wind">
+                        <div class="col-md-9 text-center">
+                            <h3 class="temp"></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-11 text-center mt-2">
+                        <h3 class="feels-like"> </h3>
+                    </div>
+                    <div class="row m-auto">
+                        <div class="col-md-5 humidity">
+                            <h3>Humidity</h3>
+                            <img src="../src/images/icons8-humidity-64.png" alt="humidity">
+                            <span><p id="humid-w"></p></span>
+                        </div>
+                        <div class="col-md-6 wind">
                             <h3>Wind Speed</h3>
-                            <p id = "wind-deg">9.3 mph</p>
+                            <img src="../src/images/icons8-wind-speed-98-102-48.png" alt="wind">
+                            <p id = "wind-deg"></p>
                         </div>
                     </div>
                 </div>
