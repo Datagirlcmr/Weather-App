@@ -15,6 +15,7 @@
       "eol-last": "off",
       "arrow-parens": "off",
       "import/extensions": "off",
-      "import/no-unresolved": "off"
+      "import/no-unresolved": "off",
+      "camelcase": "off"
     }
   }
