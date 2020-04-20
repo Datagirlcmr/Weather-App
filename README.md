@@ -20,10 +20,11 @@ This project involves implementing aynchronous javascript via aync/await and Pro
 
 - Run 
 
-     npm run dev
+        npm run dev
 
 to watch your files
-- Open your index.html file and input the location where you need weather data for.
+- Open index.html file 
+- Enter your location and view the weather data.
 
 ## Built With
 

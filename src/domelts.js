@@ -9,7 +9,7 @@ async function getWeather(value = 'Bamenda') {
 
   const [weather] = weatherdata.weather;
   const { main } = weather;
-  const { temp, feels_like, humidity } = weatherdata.main;
+  const { temp, feelLike, humidity } = weatherdata.main;
   const { speed } = weatherdata.wind;
   const { country } = weatherdata.sys;
   const { name } = weatherdata;
@@ -20,7 +20,7 @@ async function getWeather(value = 'Bamenda') {
   const tempCelcius = (temp - 273).toFixed(2);
   const tempFahrenheit = ((tempCelcius * 1.8000) + 32).toFixed(2);
 
-  const feelsCelcius = (feels_like - 273).toFixed(2);
+  const feelsCelcius = (feelLike - 273).toFixed(2);
   const feelsFahrenheit = ((feelsCelcius * 1.8000) + 32).toFixed(2);
 
   const temperature = document.querySelector('.temp');
