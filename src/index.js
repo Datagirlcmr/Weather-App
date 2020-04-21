@@ -1,9 +1,8 @@
 import './styles/style.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { getLocation, getWeather, getDate } from './domelts';
-
+import { domElements, getDate, getLocation } from './domelts';
 
 getLocation();
-getWeather();
+domElements();
 getDate();
