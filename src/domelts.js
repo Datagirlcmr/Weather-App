@@ -1,18 +1,20 @@
-import { getWeather } from './apiCall';
+import Apiquery from './apiCall';
 
 const getDate = () => {
   const currentDate = document.querySelector('#date');
   currentDate.textContent = new Date().toUTCString();
 };
 
+let weatherResults = null;
+
 const domElements = () => {
   const ctryName = document.querySelector('#ctry');
-  ctryName.textContent = `${getWeather.name},  ${getWeather.country}`;
+  ctryName.textContent = `${weatherResults.name},  ${weatherResults.country}`;
 
-  const tempCelcius = (getWeather.temp - 273).toFixed(2);
+  const tempCelcius = (weatherResults.temp - 273).toFixed(2);
   const tempFahrenheit = ((tempCelcius * 1.8000) + 32).toFixed(2);
 
-  const feelsCelcius = (getWeather.feels_like - 273).toFixed(2);
+  const feelsCelcius = (weatherResults.feels_like - 273).toFixed(2);
   const feelsFahrenheit = ((feelsCelcius * 1.8000) + 32).toFixed(2);
 
   const temperature = document.querySelector('.temp');
@@ -34,13 +36,13 @@ const domElements = () => {
   });
 
   const getHumid = document.querySelector('#humid-w');
-  getHumid.textContent = `${getWeather.humidity} %`;
+  getHumid.textContent = `${weatherResults.humidity} %`;
 
   const getDesc = document.querySelector('#main-desc');
-  getDesc.textContent = `Mostly ${getWeather.main}`;
+  getDesc.textContent = `Mostly ${weatherResults.main}`;
 
   const getWind = document.querySelector('#wind-deg');
-  getWind.textContent = `${getWeather.speed} mph`;
+  getWind.textContent = `${weatherResults.speed} mph`;
 };
 
 const getLocation = () => {
@@ -54,11 +56,25 @@ const getLocation = () => {
     }
   });
 
-  searchIcon.addEventListener('click', () => {
+  searchIcon.addEventListener('click', async () => {
+    try {
     const inputValue = getInput.value;
-    getWeather(inputValue);
+    const newApi = new Apiquery();
+    weatherResults = await newApi.getWeather(inputValue);
     domElements();
+      
+    } catch (error) {
+      const errorM = document.querySelector('.error');
+      errorM.textContent = 'The Location you Entered is incorrect';
+    }
   });
 };
 
-export { domElements, getDate, getLocation };
+const initialValue = async () => {
+  const newApi = new Apiquery();
+  weatherResults = await newApi.getWeather('Bamenda');
+  domElements();
+};
+
+
+export { domElements, getDate, getLocation, initialValue };
