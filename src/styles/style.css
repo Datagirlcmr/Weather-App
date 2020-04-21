@@ -31,6 +31,8 @@ body {
 
 .jumbotron {
     background-color: rgba(0, 0, 0, 0.459) !important;
+    border: 1px solid white;
+    border-radius: 4px;
 }
 
 .temp {
@@ -53,4 +55,18 @@ body {
 
 footer {
     font-weight: bolder;
+}
+
+@media only screen and (max-width: 767px) {
+    .app-name {
+        font-size: 60px;
+    }
+    .search {
+        display: flex;
+        justify-content: center;
+    }
+    .jumbotron {
+        size: cover !important;
+        margin: 10px;
+    }
 }
