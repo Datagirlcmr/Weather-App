@@ -62,6 +62,10 @@ const getLocation = () => {
       const newApi = new Apiquery();
       weatherResults = await newApi.getWeather(inputValue);
       domElements();
+      if (weatherResults.main === 'Thunderstorm') {
+        document.body.style.backgroundImage = 'none';
+        document.body.style.backgroundImage = "url('dist/src/images/storm.jpeg')";
+      }
     } catch (error) {
       const errorM = document.querySelector('.error');
       errorM.textContent = 'The Location you Entered is incorrect';

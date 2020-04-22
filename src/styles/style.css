@@ -5,6 +5,11 @@ body {
     background-position: center;
 }
 
+.giphy{
+    max-width: 200px;
+    margin-left: 10px;
+}
+
 .app-name {
     font-size: 100px;
     font-weight: bolder;
