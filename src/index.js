@@ -1,15 +1,16 @@
 import './styles/style.css';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { domElements, getDate, getLocation, initialValue } from './domelts';
+import {
+  getDate, getLocation, initialValue,
+} from './domelts';
+import changeBg from './interface';
 
-
-(function (){
-    console.log ('success');
-    initialValue();
-
-})();
+// eslint-disable-next-line func-names
+(function () {
+  initialValue();
+}());
 
 getLocation();
-domElements();
 getDate();
+changeBg();

@@ -58,11 +58,10 @@ const getLocation = () => {
 
   searchIcon.addEventListener('click', async () => {
     try {
-    const inputValue = getInput.value;
-    const newApi = new Apiquery();
-    weatherResults = await newApi.getWeather(inputValue);
-    domElements();
-      
+      const inputValue = getInput.value;
+      const newApi = new Apiquery();
+      weatherResults = await newApi.getWeather(inputValue);
+      domElements();
     } catch (error) {
       const errorM = document.querySelector('.error');
       errorM.textContent = 'The Location you Entered is incorrect';
@@ -77,4 +76,6 @@ const initialValue = async () => {
 };
 
 
-export { domElements, getDate, getLocation, initialValue };
+export {
+  domElements, getDate, getLocation, initialValue,
+};
