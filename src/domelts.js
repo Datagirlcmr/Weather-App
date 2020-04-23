@@ -62,8 +62,16 @@ const getLocation = () => {
       const newApi = new Apiquery();
       weatherResults = await newApi.getWeather(inputValue);
       domElements();
-      if (weatherResults.main === 'Thunderstorm' || weatherResults.main === 'clouds' || weatherResults.main === 'rain') {
-        document.body.style.backgroundImage = './cloudy.jpeg';
+      if (weatherResults.main === 'Rain') {
+        document.body.style.backgroundImage = "url('5c61fd622b53642be5885c88b8019325.jpeg')";
+      } else if (weatherResults.main === 'Thunderstorm') {
+        document.body.style.backgroundImage = "url('ad616d95cf1667e56632b9985a9a9d35.jpeg')";
+      } else if (weatherResults.main === 'Clouds') {
+        document.body.style.backgroundImage = "url('2f73522a8306cf60bae5df4bc8d77f28.jpeg')";
+      } else if (weatherResults.main === 'Clear') {
+        document.body.style.backgroundImage = "url('4423a45de689733e377642e9c526ac6a.jpeg')";
+      } else {
+        document.body.style.backgroundImage = "url('0edfd485fe793ca1cfdc646b4d92fbf6.jpeg')";
       }
     } catch (error) {
       const errorM = document.querySelector('.error');
