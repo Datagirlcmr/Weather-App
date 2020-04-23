@@ -49,4 +49,5 @@ For more information, see the
 
 Contributions, issues and feature requests are welcome! 
 
+
 Feel free to check the [issues page](https://github.com/Datagirlcmr/Weather-App/issues).
