@@ -62,9 +62,8 @@ const getLocation = () => {
       const newApi = new Apiquery();
       weatherResults = await newApi.getWeather(inputValue);
       domElements();
-      if (weatherResults.main === 'Thunderstorm') {
-        document.body.style.backgroundImage = 'none';
-        document.body.style.backgroundImage = "url('dist/src/images/storm.jpeg')";
+      if (weatherResults.main === 'Thunderstorm' || weatherResults.main === 'clouds' || weatherResults.main === 'rain') {
+        document.body.style.backgroundImage = './cloudy.jpeg';
       }
     } catch (error) {
       const errorM = document.querySelector('.error');

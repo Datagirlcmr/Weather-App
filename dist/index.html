@@ -6,18 +6,18 @@
     <title>Weather App</title>
 </head>
 <body>
-    <section>
-        <div class="m-1 text-center col-xs-12">
-            <h1 class="col-xs-10 text-center app-name">Weather4u</h1>
+    <section class="jumbotron">
+        <div class="m-auto text-center col-xs-12">
+            <h1 class="col-xs-8 col-md-6 text-center app-name">Weather4u</h1>
         </div>
         
-        <div class="col-xs-12 d-flex justify-content-center">
-            <input class="p-2 search" id="location" type="text" placeholder="Enter your Location">
+        <div class="m-auto col-xs-8 justify-content-center d-flex">
+            <input class="search p-2" id="location" type="text" placeholder="Enter your Location">
             <span>
                 <img class="search-icon" src="https://img.icons8.com/cotton/64/000000/search--v1.png" alt="submit">
             </span>
         </div>
-        <h1 class="error text-danger"></h1>
+        <h1 class="col-xs-12 col-md-8 error text-danger text-center font-weight-bolder"></h1>
     </section>
     <main>
         <div class="container">
@@ -40,11 +40,11 @@
                             <h4 class="tempp" id="main-desc"></h4>
                         </div>
                         <div>
-                            <h3 class="col-xs-12 text-center col-md-3 tempp">Temp</h3>
+                            <h3 class="col-xs-12 text-center col-md-2 tempp">Temp</h3>
                             <img src="../src/images/icons8-temperature-64.png" alt="temp"/>
-                            <img class="giphy col-xs-12" src="" alt="">
+                            <!-- <img class="giphy col-xs-12" src="" alt=""> -->
                         </div>
-                        <div class="col-xs-12 col-md-6 text-center">
+                        <div class="col-xs-12 col-md-7 text-center">
                             <h3 class="temp"></h3>
                             <h4 class=" tempp feels-like"> </h4>
                         </div>
@@ -70,7 +70,7 @@
             </div>
         </div>
     </main>
-    <footer class="col-xs-12">
+    <footer class="col-xs-12 col-md-8">
         <p class="text-center">Designed by DataGirl &copy;2020</p>
     </footer>
     <script src="main.js"></script>
