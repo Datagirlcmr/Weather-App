@@ -2,7 +2,7 @@ import Apiquery from './apiCall';
 
 const getDate = () => {
   const currentDate = document.querySelector('#date');
-  currentDate.textContent = new Date().toUTCString();
+  currentDate.textContent = new Date().toLocaleString();
 };
 
 let weatherResults = null;
